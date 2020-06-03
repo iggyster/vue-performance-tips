@@ -1,6 +1,10 @@
 version: '3.1'
 services:
   node:
-    image: node:latest
+    build:
+      context: ./
+    ports:
+      - 8080:8080
+      - 8000:8000 # vue ui --headless --port 8000 --host 0.0.0.0
     volumes:
     - ./:/var/www/app
