@@ -1,0 +1,29 @@
+<template>
+    <Page>
+        <template #content>
+            <LocalVarOn v-if="optimized"/>
+            <LocalVarOff v-else/>
+        </template>
+    </Page>
+</template>
+
+<script>
+    import Page from "../components/Page";
+    import LocalVarOff from "../components/Benchmarks/LocalVar/LocalVarOff";
+    import LocalVarOn from "../components/Benchmarks/LocalVar/LocalVarOn";
+
+    export default {
+        name: "LocalVar",
+        components: {
+            Page,
+            LocalVarOff,
+            LocalVarOn,
+        },
+        props: {
+            optimized: {
+                type: Boolean,
+                default: false,
+            }
+        },
+    }
+</script>
