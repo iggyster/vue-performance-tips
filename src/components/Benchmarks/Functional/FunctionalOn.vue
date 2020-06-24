@@ -9,7 +9,3 @@
         name: "FunctionalOn"
     }
 </script>
-
-<style scoped>
-
-</style>

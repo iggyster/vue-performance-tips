@@ -9,7 +9,3 @@
         name: "FunctionalOff"
     }
 </script>
-
-<style scoped>
-
-</style>

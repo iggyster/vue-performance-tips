@@ -1,8 +1,8 @@
 <template>
     <Page>
-        <template v-slot:content>
-            <FunctionalOff/>
-            <FunctionalOn/>
+        <template #content>
+            <FunctionalOff v-if="optimized"/>
+            <FunctionalOn v-else/>
         </template>
     </Page>
 </template>

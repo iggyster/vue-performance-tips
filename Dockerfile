@@ -8,7 +8,7 @@ WORKDIR /var/www/app
 COPY . .
 
 RUN yarn install --non-interactive
-RUN yarn run build
+RUN yarn run dev
 
 EXPOSE 8080
 
