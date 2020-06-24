@@ -1,8 +1,10 @@
 <template>
     <Page>
-        <template #content>
-            <FunctionalOff v-if="optimized"/>
-            <FunctionalOn v-else/>
+        <template #off>
+            <FunctionalOff/>
+        </template>
+        <template #on>
+            <FunctionalOn/>
         </template>
     </Page>
 </template>
@@ -27,7 +29,3 @@
         }
     }
 </script>
-
-<style scoped>
-
-</style>

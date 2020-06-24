@@ -1,8 +1,10 @@
 <template>
     <Page>
-        <template #content>
-            <StaticOn v-if="optimized"/>
-            <StaticOff v-else/>
+        <template #off>
+            <StaticOff/>
+        </template>
+        <template #on>
+            <StaticOn/>
         </template>
     </Page>
 </template>

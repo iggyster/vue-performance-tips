@@ -1,8 +1,10 @@
 <template>
     <Page>
-        <template #content>
-            <ShowOn v-if="optimized"/>
-            <ShowOff v-else/>
+        <template #off>
+            <ShowOff/>
+        </template>
+        <template #on>
+            <ShowOn/>
         </template>
     </Page>
 </template>

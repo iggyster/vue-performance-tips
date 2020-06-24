@@ -1,8 +1,10 @@
 <template>
     <Page>
-        <template #content>
-            <LazyComponentOn v-if="optimized"/>
-            <LazyComponentOff v-else/>
+        <template #off>
+            <LazyComponentOff/>
+        </template>
+        <template #on>
+            <LazyComponentOn/>
         </template>
     </Page>
 </template>

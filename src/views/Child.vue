@@ -1,8 +1,10 @@
 <template>
     <Page>
-        <template #content>
-            <ChildOn v-if="optimized"/>
-            <ChildOff v-else/>
+        <template #off>
+            <ChildOff/>
+        </template>
+        <template #on>
+            <ChildOn/>
         </template>
     </Page>
 </template>
@@ -27,7 +29,3 @@
         },
     }
 </script>
-
-<style scoped>
-
-</style>

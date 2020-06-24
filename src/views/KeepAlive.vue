@@ -1,8 +1,10 @@
 <template>
     <Page>
-        <template #content>
-            <KeepAliveOn v-if="optimized"/>
-            <KeepAliveOff v-else/>
+        <template #off>
+            <KeepAliveOff/>
+        </template>
+        <template #on>
+            <KeepAliveOn/>
         </template>
     </Page>
 </template>

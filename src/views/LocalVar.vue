@@ -1,8 +1,10 @@
 <template>
     <Page>
-        <template #content>
-            <LocalVarOn v-if="optimized"/>
-            <LocalVarOff v-else/>
+        <template #off>
+            <LocalVarOff/>
+        </template>
+        <template #on>
+            <LocalVarOn/>
         </template>
     </Page>
 </template>

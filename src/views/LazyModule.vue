@@ -1,8 +1,10 @@
 <template>
     <Page>
-        <template #content>
-            <LazyModuleOn v-if="optimized"/>
-            <LazyModuleOff v-else/>
+        <template #off>
+            <LazyModuleOff/>
+        </template>
+        <template #on>
+            <LazyModuleOn/>
         </template>
     </Page>
 </template>

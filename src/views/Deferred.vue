@@ -1,8 +1,10 @@
 <template>
     <Page>
-        <template #content>
-            <DeferredOn v-if="optimized"/>
-            <DeferredOff v-else/>
+        <template #off>
+            <DeferredOff/>
+        </template>
+        <template #on>
+            <DeferredOn/>
         </template>
     </Page>
 </template>
