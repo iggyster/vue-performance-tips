@@ -4,12 +4,13 @@
             <Navigation/>
         </header>
         <main>
-            <div class="row justify-content-end mt-2">
+            <div class="row justify-content-end mr-0 ml-0 mt-2">
                 <div class="col-1">
                     <div class="custom-control custom-switch">
                         <input type="checkbox" class="custom-control-input" id="optimized" v-model="optimized">
                         <label class="custom-control-label" for="optimized">Optimized</label>
                     </div>
+                    <slot name="switches"></slot>
                 </div>
             </div>
             <slot name="content"></slot>
@@ -30,6 +31,7 @@
         data() {
             return {
                 optimized: false,
+                play: false,
             };
         },
     }

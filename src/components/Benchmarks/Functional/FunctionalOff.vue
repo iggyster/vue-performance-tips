@@ -1,11 +1,18 @@
 <template>
-    <div>
-        Functional not optimized
+    <div class="circle">
+        <div v-if="value" class="on"></div>
+        <div v-else class="off"></div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "FunctionalOff"
+        name: "FunctionalOff",
+        props: {
+            value: {
+                type: Boolean,
+                required: true,
+            }
+        },
     }
 </script>
