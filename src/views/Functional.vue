@@ -27,14 +27,12 @@
 </template>
 
 <script>
-    import Page from "../components/Page";
     import FunctionalOff from "../components/Benchmarks/Functional/FunctionalOff";
     import FunctionalOn from "../components/Benchmarks/Functional/FunctionalOn";
 
     export default {
         name: "Functional",
         components: {
-            Page,
             FunctionalOff,
             FunctionalOn,
         },
@@ -70,27 +68,9 @@
     }
 </script>
 
-<style>
+<style scoped>
     .grid {
         margin: 24px auto;
         max-width: 800px;
-    }
-    .circle {
-        float: left;
-        width: 21px;
-        height: 21px;
-        margin: 2px;
-    }
-    .on, .off {
-        width: 100%;
-        height: 100%;
-        color: transparent;
-        border-radius: 50%;
-    }
-    .on {
-        background-color: #42b983;
-    }
-    .off {
-        background-color: white;
     }
 </style>
