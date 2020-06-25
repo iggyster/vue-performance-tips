@@ -14,24 +14,36 @@
         </button>
         <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav justify-content-end">
-                <li class="nav-item">
-                    <router-link to="/functional" class="nav-link">Functional</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link to="/show" class="nav-link">Show</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link to="/static" class="nav-link">Static</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link to="/keep-alive" class="nav-link">Keep-alive</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link to="/child" class="nav-link">Child</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link to="/local-var" class="nav-link">Local var</router-link>
-                </li>
+                <router-link to="/functional" v-slot="{ href, navigate, isActive }">
+                    <li :class="`nav-item${isActive ? ' active' : ''}`">
+                        <a class="nav-link" :href="href" @click="navigate">Functional</a>
+                    </li>
+                </router-link>
+                <router-link to="/show" v-slot="{ href, navigate, isActive }">
+                    <li :class="`nav-item${isActive ? ' active' : ''}`">
+                        <a class="nav-link" :href="href" @click="navigate">Show</a>
+                    </li>
+                </router-link>
+                <router-link to="/static" v-slot="{ href, navigate, isActive }">
+                    <li :class="`nav-item${isActive ? ' active' : ''}`">
+                        <a class="nav-link" :href="href" @click="navigate">Static</a>
+                    </li>
+                </router-link>
+                <router-link to="/keep-alive" v-slot="{ href, navigate, isActive }">
+                    <li :class="`nav-item${isActive ? ' active' : ''}`">
+                        <a class="nav-link" :href="href" @click="navigate">Keep-alive</a>
+                    </li>
+                </router-link>
+                <router-link to="/child" v-slot="{ href, navigate, isActive }">
+                    <li :class="`nav-item${isActive ? ' active' : ''}`">
+                        <a class="nav-link" :href="href" @click="navigate">Child</a>
+                    </li>
+                </router-link>
+                <router-link to="/local-var" v-slot="{ href, navigate, isActive }">
+                    <li :class="`nav-item${isActive ? ' active' : ''}`">
+                        <a class="nav-link" :href="href" @click="navigate">Local var</a>
+                    </li>
+                </router-link>
             </ul>
         </div>
     </nav>
