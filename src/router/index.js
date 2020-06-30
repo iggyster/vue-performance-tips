@@ -22,11 +22,6 @@ const router = new VueRouter({
             component: () => import("../views/Show")
         },
         {
-            path: '/static',
-            name: 'static',
-            component: () => import("../views/Static")
-        },
-        {
             path: '/keep-alive',
             name: 'keep-alive',
             component: () => import("../views/KeepAlive")
