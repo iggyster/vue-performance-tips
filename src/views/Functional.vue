@@ -29,41 +29,19 @@
 <script>
     import FunctionalOff from "../components/Benchmarks/Functional/FunctionalOff";
     import FunctionalOn from "../components/Benchmarks/Functional/FunctionalOn";
+    import generate from "../mixins/generate";
 
     export default {
         name: "Functional",
+        mixins: [generate],
         components: {
             FunctionalOff,
             FunctionalOn,
-        },
-        data() {
-            return {
-                play: false,
-                list: [],
-            };
-        },
-        watch: {
-            play(value) {
-                if (value) {
-                    this.generate();
-                }
-            },
         },
         created () {
             this.count = 800;
             this.uid = 0;
             this.generate();
-        },
-        methods: {
-           generate() {
-                const data = [];
-                for (let i = 0; i < this.count; i++) {
-                    data.push(Math.random() < 0.5)
-                }
-
-                this.list = data;
-                this.play && requestAnimationFrame(this.generate);
-            },
         },
     }
 </script>

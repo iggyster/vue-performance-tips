@@ -27,40 +27,18 @@
 <script>
     import ShowOff from "../components/Benchmarks/Show/ShowOff";
     import ShowOn from "../components/Benchmarks/Show/ShowOn";
+    import generate from "../mixins/generate";
 
     export default {
         name: "Show",
+        mixins: [generate],
         components: {
             ShowOff,
             ShowOn,
         },
-        created() {
-            this.count = 200;
+        created () {
+            this.count = 800;
             this.generate();
-        },
-        data() {
-            return {
-                play: false,
-                list: [],
-            };
-        },
-        watch: {
-            play(value) {
-                if (value) {
-                    this.generate();
-                }
-            }
-        },
-        methods: {
-            generate() {
-                const data = [];
-                for (let i = 0; i < this.count; i++) {
-                    data.push(Math.random() < 0.5)
-                }
-
-                this.list = data;
-                this.play && requestAnimationFrame(this.generate);
-            },
         },
     }
 </script>
@@ -68,15 +46,6 @@
 <style scoped>
     .grid {
         margin: 24px auto;
-        max-width: 200px;
-    }
-
-    .heavy {
-        border: none;
-        box-shadow: 0 0 5px black;
-        opacity: .5;
-        margin: 0;
-        width: 100% !important;
-        height: 100% !important;
+        max-width: 800px;
     }
 </style>
