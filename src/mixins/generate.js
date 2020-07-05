@@ -1,6 +1,6 @@
 export default {
     created() {
-        this.count = 200;
+        this.count = 800;
         this.generate();
     },
     data() {

@@ -13,14 +13,12 @@
         </template>
         <template #off>
             <div class="grid">
-                <!-- eslint-disable -->
-                <FunctionalOff v-for="n of list" :key="uid++" :value="n"/>
+                <FunctionalOff v-for="(n,index) of list" :key="index" :value="n"/>
             </div>
         </template>
         <template #on>
             <div class="grid">
-                <FunctionalOn v-for="n of list" :key="uid++" :value="n"/>
-                <!-- eslint-enable -->
+                <FunctionalOn v-for="(n,index) of list" :key="index" :value="n"/>
             </div>
         </template>
     </Page>
@@ -37,11 +35,6 @@
         components: {
             FunctionalOff,
             FunctionalOn,
-        },
-        created () {
-            this.count = 800;
-            this.uid = 0;
-            this.generate();
         },
     }
 </script>

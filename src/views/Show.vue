@@ -36,10 +36,6 @@
             ShowOff,
             ShowOn,
         },
-        created () {
-            this.count = 800;
-            this.generate();
-        },
     }
 </script>
 
