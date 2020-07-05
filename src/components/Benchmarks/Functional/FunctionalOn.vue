@@ -22,6 +22,6 @@
         background-color: #42b983;
     }
     .off {
-        background-color: white;
+        background-color: #2c3e50;
     }
 </style>

@@ -50,6 +50,6 @@
         background-color: rebeccapurple;
     }
     .off {
-        background-color: white;
+        background-color: #2c3e50;
     }
 </style>
