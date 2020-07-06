@@ -4,7 +4,6 @@
             <div class="circle">
                 <div v-if="n" class="on"></div>
                 <div v-else class="off"></div>
-                <Heavy :factor="1000"/>
             </div>
         </div>
     </div>
@@ -16,6 +15,9 @@
     export default {
         name: "KeepAliveOff",
         mixins: [generate],
+        mounted() {
+            this.play = true;
+        }
     }
 </script>
 

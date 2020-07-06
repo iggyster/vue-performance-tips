@@ -23,7 +23,7 @@
                 const n = this.factor;
                 let result = 0;
                 for (let i = 0; i < n; i++) {
-                    result += Math.tan(Math.sqrt(Math.cos(Math.sin(Math.random() * 100))))
+                    result += Math.tan(Math.sqrt(Math.cos(Math.sin(Math.random() * this.size))))
                 }
 
                 return result;
