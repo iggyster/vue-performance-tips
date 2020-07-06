@@ -29,14 +29,14 @@
                         <a class="nav-link" :href="href" @click="navigate">Keep-alive</a>
                     </li>
                 </router-link>
-                <router-link to="/child" v-slot="{ href, navigate, isActive }">
-                    <li :class="`nav-item${isActive ? ' active' : ''}`">
-                        <a class="nav-link" :href="href" @click="navigate">Child</a>
-                    </li>
-                </router-link>
                 <router-link to="/local-var" v-slot="{ href, navigate, isActive }">
                     <li :class="`nav-item${isActive ? ' active' : ''}`">
                         <a class="nav-link" :href="href" @click="navigate">Local var</a>
+                    </li>
+                </router-link>
+                <router-link to="/child" v-slot="{ href, navigate, isActive }">
+                    <li :class="`nav-item${isActive ? ' active' : ''}`">
+                        <a class="nav-link" :href="href" @click="navigate">Child</a>
                     </li>
                 </router-link>
             </ul>
