@@ -1,9 +1,9 @@
+import './components'
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import './theme'
 import './plugins'
-import './components'
 
 Vue.config.productionTip = false;
 

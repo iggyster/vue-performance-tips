@@ -24,7 +24,7 @@
                         <a class="nav-link" :href="href" @click="navigate">Functional</a>
                     </li>
                 </router-link>
-                <router-link to="/keep-alive" v-slot="{ href, navigate, isActive }">
+                <router-link :to="{name: 'keep-alive-prev'}" v-slot="{ href, navigate, isActive }">
                     <li :class="`nav-item${isActive ? ' active' : ''}`">
                         <a class="nav-link" :href="href" @click="navigate">Keep-alive</a>
                     </li>

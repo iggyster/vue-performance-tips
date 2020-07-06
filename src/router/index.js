@@ -23,8 +23,19 @@ const router = new VueRouter({
         },
         {
             path: '/keep-alive',
-            name: 'keep-alive',
-            component: () => import("../views/KeepAlive")
+            component: () => import("../views/KeepAlive"),
+            children: [
+                {
+                    path: '',
+                    name: 'keep-alive-prev',
+                    component: () => import("../components/Benchmarks/KeepAlive/KeepAliveOff"),
+                },
+                {
+                    path: '/next',
+                    name: 'keep-alive-next',
+                    component: () => import("../components/Benchmarks/KeepAlive/KeepAliveOn"),
+                },
+            ],
         },
         {
             path: '/child',
