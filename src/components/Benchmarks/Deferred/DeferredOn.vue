@@ -35,7 +35,7 @@
             Defer(),
         ],
         mounted() {
-            this.count = 162;
+            this.count = 256;
             this.play = true;
         }
     }
@@ -43,14 +43,14 @@
 
 <style scoped>
     .grid {
-        width: 400px;
+        width: 800px;
         height: 200px;
-        margin: 10px auto;
+        margin: 0 auto;
     }
     .circle {
          float: left;
-         width: 18px;
-         height: 18px;
+         width: 21px;
+         height: 21px;
          margin: 2px;
      }
     .on, .off {

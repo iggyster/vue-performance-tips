@@ -14,12 +14,12 @@ export default function (count = 10) {
             runDisplayPriority () {
                 const step = () => {
                     requestAnimationFrame(() => {
-                        this.displayPriority++
+                        this.displayPriority++;
                         if (this.displayPriority < count) {
                             step()
                         }
                     })
-                }
+                };
                 step()
             },
 

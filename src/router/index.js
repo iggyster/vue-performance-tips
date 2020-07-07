@@ -9,48 +9,48 @@ const router = new VueRouter({
         {
             path: '/',
             name: 'main',
-            component: () => import("../views/Main")
+            component: () => import(/* webpackChunkName: "main" */"../views/Main")
         },
         {
             path: '/functional',
             name: 'functional',
-            component: () => import("../views/Functional")
+            component: () => import(/* webpackChunkName: "bench-functional" */"../views/Functional")
         },
         {
             path: '/show',
             name: 'show',
-            component: () => import("../views/Show")
+            component: () => import(/* webpackChunkName: "bench-show" */"../views/Show")
         },
         {
             path: '/keep-alive',
-            component: () => import("../views/KeepAlive"),
+            component: () => import(/* webpackChunkName: "bench-keep-alive" */"../views/KeepAlive"),
             children: [
                 {
                     path: '',
                     name: 'keep-alive-prev',
-                    component: () => import("../components/Benchmarks/KeepAlive/KeepAliveOff"),
+                    component: () => import(/* webpackChunkName: "bench-keep-alive-off" */"../components/Benchmarks/KeepAlive/KeepAliveOff"),
                 },
                 {
                     path: '/next',
                     name: 'keep-alive-next',
-                    component: () => import("../components/Benchmarks/KeepAlive/KeepAliveOn"),
+                    component: () => import(/* webpackChunkName: "bench-keep-alive-on" */"../components/Benchmarks/KeepAlive/KeepAliveOn"),
                 },
             ],
         },
         {
             path: '/child',
             name: 'child',
-            component: () => import("../views/Child")
+            component: () => import(/* webpackChunkName: "bench-child" */"../views/Child")
         },
         {
             path: '/local-var',
             name: 'local-var',
-            component: () => import("../views/LocalVar")
+            component: () => import(/* webpackChunkName: "bench-local" */"../views/LocalVar")
         },
         {
             path: '/deferred',
             name: 'deferred',
-            component: () => import("../views/Deferred")
+            component: () => import(/* webpackChunkName: "bench-deferred" */"../views/Deferred")
         },
         {
             path: '/lazy-component',
