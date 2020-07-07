@@ -1,5 +1,10 @@
 <template>
     <Page>
+        <template #content>
+            <div class="row m-0 justify-content-md-center align-items-center">
+                <h1>Deferred components</h1>
+            </div>
+        </template>
         <template #off>
             <DeferredOff/>
         </template>
@@ -18,12 +23,6 @@
         components: {
             DeferredOff,
             DeferredOn,
-        },
-        props: {
-            optimized: {
-                type: Boolean,
-                default: false,
-            }
         },
     }
 </script>
