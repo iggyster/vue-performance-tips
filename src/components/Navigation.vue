@@ -14,14 +14,14 @@
         </button>
         <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav justify-content-end">
-                <router-link to="/show" v-slot="{ href, navigate, isActive }">
-                    <li :class="`nav-item${isActive ? ' active' : ''}`">
-                        <a class="nav-link" :href="href" @click="navigate">Show/If</a>
-                    </li>
-                </router-link>
                 <router-link to="/functional" v-slot="{ href, navigate, isActive }">
                     <li :class="`nav-item${isActive ? ' active' : ''}`">
                         <a class="nav-link" :href="href" @click="navigate">Functional</a>
+                    </li>
+                </router-link>
+                <router-link to="/show" v-slot="{ href, navigate, isActive }">
+                    <li :class="`nav-item${isActive ? ' active' : ''}`">
+                        <a class="nav-link" :href="href" @click="navigate">Show/If</a>
                     </li>
                 </router-link>
                 <router-link to="/local-var" v-slot="{ href, navigate, isActive }">
