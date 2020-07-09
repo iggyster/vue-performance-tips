@@ -52,16 +52,6 @@ const router = new VueRouter({
             name: 'deferred',
             component: () => import(/* webpackChunkName: "bench-deferred" */"../views/Deferred")
         },
-        {
-            path: '/lazy-component',
-            name: 'lazy-component',
-            component: () => import("../views/LazyComponent")
-        },
-        {
-            path: '/lazy-module',
-            name: 'lazy-module',
-            component: () => import("../views/LazyModule")
-        },
     ],
 });
 
