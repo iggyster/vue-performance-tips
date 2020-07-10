@@ -30,18 +30,7 @@
 
 <script>
     export default {
-        name: "KeepAlive",
-        mounted() {
-            let duplicates = document.getElementsByClassName('duplicated-content');
-            if (duplicates.length > 1) {
-                duplicates[1].remove();
-            }
-
-            duplicates = document.getElementsByClassName('duplicated-switches');
-            if (duplicates.length > 1) {
-                duplicates[1].remove();
-            }
-        },
+        name: "Keep",
         data() {
             return {
                 play: false,

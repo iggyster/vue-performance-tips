@@ -23,7 +23,7 @@ const router = new VueRouter({
         },
         {
             path: '/keep-alive',
-            component: () => import(/* webpackChunkName: "bench-keep-alive" */"../views/KeepAlive"),
+            component: () => import(/* webpackChunkName: "bench-keep-alive" */"../views/Keep"),
             children: [
                 {
                     path: '',
