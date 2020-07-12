@@ -2,7 +2,7 @@
     <Page>
         <template #content>
             <div class="row m-0 justify-content-center">
-                <h1>Show VS If</h1>
+                <h1>Conditional render</h1>
             </div>
         </template>
         <template #switches>
@@ -38,10 +38,3 @@
         },
     }
 </script>
-
-<style scoped>
-    .grid {
-        margin: 24px auto;
-        max-width: 800px;
-    }
-</style>
