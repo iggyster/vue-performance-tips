@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="567d5f4b-944f-4107-b5bd-abfaa7a05ec7" name="Default Changelist" comment="" />
+    <list default="true" id="567d5f4b-944f-4107-b5bd-abfaa7a05ec7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/app.105fe1d0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/bench-child.b419781e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/bench-deferred.b2ff68ba.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/bench-functional.7024a0d5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/bench-keep-alive-off.77972487.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/bench-keep-alive-on.e2247ef4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/bench-local.8fb7f9d3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/bench-show.98622b1e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/theme.dca42f8b.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/logo.82b9c7a5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/app.327dd667.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/app.327dd667.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bench-child.e344d33a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bench-child.e344d33a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bench-deferred.cbefc4bf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bench-deferred.cbefc4bf.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bench-functional.c4cb5fa8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bench-functional.c4cb5fa8.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bench-keep-alive-off.8018e95f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bench-keep-alive-off.8018e95f.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bench-keep-alive-on.a7fc8e14.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bench-keep-alive-on.a7fc8e14.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bench-keep-alive.4b96d44a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bench-keep-alive.4b96d44a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bench-local.09022102.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bench-local.09022102.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bench-show.36c11169.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bench-show.36c11169.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-vendors.3b041cfd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-vendors.3b041cfd.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/jquery.e2bcfd28.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/jquery.e2bcfd28.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/main.af046fca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/main.af046fca.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/popper.921b6a3f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/popper.921b6a3f.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/theme.000742c3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/theme.000742c3.js.map" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -204,17 +245,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
-                <item name="Compose: docker-compose.yml" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
-                <item name="Compose: docker-compose.yml" type="9fbbdea:ServiceModel$ServiceNode" />
-                <item name="node" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -396,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594635446238</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Update demo">
+      <created>1594735688201</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1594735688201</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +473,8 @@
     <MESSAGE value="Fix bug with duplicated content of KeepAlive page&#10;&#10;Keep-alive is reserved name for a Vue.js component" />
     <MESSAGE value="Transitional commit: Remove rudiments" />
     <MESSAGE value="Add vue config to build prod for demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add vue config to build prod for demo" />
+    <MESSAGE value="Update demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update demo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2476" y="200" key="#ESLint" timestamp="1593085870206">
@@ -451,10 +489,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2339" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591166838126" />
-    <state x="1920" y="0" width="1920" height="1080" key="CommitChangelistDialog2" timestamp="1594635445974">
+    <state x="1920" y="0" width="1920" height="1080" key="CommitChangelistDialog2" timestamp="1594735688014">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="1920" y="0" width="1920" height="1080" key="CommitChangelistDialog2/0.28.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1594635445974" />
+    <state x="1920" y="0" width="1920" height="1080" key="CommitChangelistDialog2/0.28.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1594735688014" />
     <state x="2722" y="430" key="DockerComposeFileDialog" timestamp="1591166835884">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -471,10 +509,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2377" y="173" key="SettingsEditor/0.28.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591168223872" />
-    <state x="2476" y="274" key="Vcs.Push.Dialog.v2" timestamp="1594635451232">
+    <state x="2476" y="274" key="Vcs.Push.Dialog.v2" timestamp="1594735703723">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2476" y="274" key="Vcs.Push.Dialog.v2/0.28.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1594635451232" />
+    <state x="2476" y="274" key="Vcs.Push.Dialog.v2/0.28.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1594735703723" />
     <state x="2542" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1594366763836">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -487,10 +525,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2547" y="275" width="665" height="530" key="find.popup/0.28.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1594634497562" />
-    <state x="2573" y="328" key="git4idea.merge.GitPullDialog" timestamp="1594635183719">
+    <state x="2573" y="328" key="git4idea.merge.GitPullDialog" timestamp="1594735728942">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2573" y="328" key="git4idea.merge.GitPullDialog/0.28.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1594635183719" />
+    <state x="2573" y="328" key="git4idea.merge.GitPullDialog/0.28.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1594735728942" />
     <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1593092863756">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
