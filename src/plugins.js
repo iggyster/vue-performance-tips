@@ -1,15 +1,15 @@
 import(
-    /* webpackChunkName: "plugins" */
+    /* webpackChunkName: "jquery" */
     /* webpackPrefetch: true */
     'jquery/dist/jquery.min'
 );
 import(
-    /* webpackChunkName: "plugins" */
+    /* webpackChunkName: "popper" */
     /* webpackPrefetch: true */
     'popper.js/dist/popper.min'
 );
 import(
-    /* webpackChunkName: "plugins" */
+    /* webpackChunkName: "bootstrap" */
     /* webpackPrefetch: true */
     'bootstrap/dist/js/bootstrap.min'
 );
