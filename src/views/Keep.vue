@@ -1,5 +1,5 @@
 <template>
-    <Page>
+    <Benchmark>
         <template #switches>
             <div class="btn-group" role="group" aria-label="Basic example">
                     <button type="button"
@@ -25,7 +25,7 @@
         <template #off>
             <router-view/>
         </template>
-    </Page>
+    </Benchmark>
 </template>
 
 <script>

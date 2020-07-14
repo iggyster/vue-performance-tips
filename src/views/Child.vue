@@ -1,5 +1,5 @@
 <template>
-    <Page>
+    <Benchmark>
         <template #content>
             <div class="row m-0 justify-content-center">
                 <h1>Child component</h1>
@@ -21,7 +21,7 @@
                 <ChildOn v-for="(n,index) of list" :key="index" :value="n"/>
             </div>
         </template>
-    </Page>
+    </Benchmark>
 </template>
 
 <script>

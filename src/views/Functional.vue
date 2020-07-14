@@ -1,5 +1,5 @@
 <template>
-    <Page>
+    <Benchmark>
         <template #content>
             <div class="row m-0 justify-content-md-center align-items-center">
                 <h1>Functional component</h1>
@@ -21,7 +21,7 @@
                 <FunctionalOn v-for="(n,index) of list" :key="index" :value="n"/>
             </div>
         </template>
-    </Page>
+    </Benchmark>
 </template>
 
 <script>

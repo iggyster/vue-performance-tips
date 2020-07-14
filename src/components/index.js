@@ -1,6 +1,6 @@
 import Vue from 'vue';
-import Page from './Page';
+import Benchmark from "./Benchmark";
 import Heavy from './Heavy';
 
-Vue.component('Page', Page);
+Vue.component('Benchmark', Benchmark);
 Vue.component('Heavy', Heavy);

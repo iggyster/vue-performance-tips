@@ -20,7 +20,7 @@
 
 <script>
     export default {
-        name: "Page",
+        name: "Benchmark",
         data() {
             return {
                 optimized: false,
