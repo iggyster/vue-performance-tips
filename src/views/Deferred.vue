@@ -1,5 +1,8 @@
 <template>
     <Benchmark>
+        <template #title>
+            <h1>Deferred components</h1>
+        </template>
         <template #switches>
             <div class="btn-group" role="group" aria-label="Basic example">
                 <button type="button"
@@ -10,11 +13,6 @@
                         class="btn btn-secondary"
                         :class="page ? 'active' : ''"
                         @click="page = true">Next</button>
-            </div>
-        </template>
-        <template #content>
-            <div class="row m-0 justify-content-md-center align-items-center">
-                <h1>Deferred components</h1>
             </div>
         </template>
         <template #off>
@@ -47,3 +45,12 @@
         },
     }
 </script>
+
+<style>
+    .grid {
+        height: 200px;
+    }
+    .on {
+        background-color: tomato;
+    }
+</style>

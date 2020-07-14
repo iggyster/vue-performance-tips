@@ -1,9 +1,7 @@
 <template>
     <Benchmark>
-        <template #content>
-            <div class="row m-0 justify-content-center">
-                <h1>Child component</h1>
-            </div>
+        <template #title>
+            <h1>Child component</h1>
         </template>
         <template #switches>
             <div class="custom-control custom-switch">
@@ -39,9 +37,8 @@
     }
 </script>
 
-<style scoped>
-    .grid {
-        margin: 24px auto;
-        max-width: 800px;
+<style>
+    .on {
+        background-color: rebeccapurple;
     }
 </style>

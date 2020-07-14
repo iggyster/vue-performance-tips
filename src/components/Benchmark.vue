@@ -10,7 +10,9 @@
                     <slot name="switches"/>
                 </div>
             </div>
-            <slot name="content"/>
+            <div class="row m-0 justify-content-center">
+                <slot name="title"/>
+            </div>
             <slot v-if="optimized" name="on"/>
             <slot v-else name="off"/>
             <slot/>
@@ -28,3 +30,26 @@
         },
     }
 </script>
+
+<style>
+    .grid {
+        margin: 0 auto;
+        width: 800px;
+    }
+
+    .circle {
+        float: left;
+        width: 21px;
+        height: 21px;
+        margin: 2px;
+    }
+    .on, .off {
+        width: 100%;
+        height: 100%;
+        color: transparent;
+        border-radius: 50%;
+    }
+    .off {
+        background-color: #2c3e50;
+    }
+</style>
