@@ -5,6 +5,7 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
     mode: 'history',
+    base: process.env.NODE_ENV === 'production' ? '/vue-performance-tips/' : '/',
     routes: [
         {
             path: '/',
@@ -12,14 +13,14 @@ const router = new VueRouter({
             component: () => import(/* webpackChunkName: "main" */"../views/Main")
         },
         {
-            path: '/functional',
-            name: 'functional',
+            path: '/functional-component',
+            name: 'functional-component',
             component: () => import(/* webpackChunkName: "bench-functional" */"../views/Functional")
         },
         {
-            path: '/show',
-            name: 'show',
-            component: () => import(/* webpackChunkName: "bench-show" */"../views/Show")
+            path: '/conditional-rendering',
+            name: 'conditional-rendering',
+            component: () => import(/* webpackChunkName: "bench-show" */"../views/Conditional")
         },
         {
             path: '/keep-alive',
@@ -38,8 +39,8 @@ const router = new VueRouter({
             ],
         },
         {
-            path: '/child',
-            name: 'child',
+            path: '/child-component',
+            name: 'child-component',
             component: () => import(/* webpackChunkName: "bench-child" */"../views/Child")
         },
         {
@@ -48,8 +49,8 @@ const router = new VueRouter({
             component: () => import(/* webpackChunkName: "bench-local" */"../views/LocalVar")
         },
         {
-            path: '/deferred',
-            name: 'deferred',
+            path: '/deferred-components',
+            name: 'deferred-components',
             component: () => import(/* webpackChunkName: "bench-deferred" */"../views/Deferred")
         },
     ],

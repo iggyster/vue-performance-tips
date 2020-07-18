@@ -40,29 +40,3 @@
         }
     }
 </script>
-
-<style scoped>
-    .grid {
-        width: 800px;
-        height: 200px;
-        margin: 0 auto;
-    }
-    .circle {
-         float: left;
-         width: 21px;
-         height: 21px;
-         margin: 2px;
-     }
-    .on, .off {
-        width: 100%;
-        height: 100%;
-        color: transparent;
-        border-radius: 50%;
-    }
-    .on {
-        background-color: tomato;
-    }
-    .off {
-        background-color: #2c3e50;
-    }
-</style>

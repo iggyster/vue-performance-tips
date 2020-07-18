@@ -1,9 +1,7 @@
 <template>
-    <Page>
-        <template #content>
-            <div class="row m-0 justify-content-center">
-                <h1>Child component</h1>
-            </div>
+    <Benchmark>
+        <template #title>
+            <h1>Child component</h1>
         </template>
         <template #switches>
             <div class="custom-control custom-switch">
@@ -21,7 +19,7 @@
                 <ChildOn v-for="(n,index) of list" :key="index" :value="n"/>
             </div>
         </template>
-    </Page>
+    </Benchmark>
 </template>
 
 <script>
@@ -39,9 +37,8 @@
     }
 </script>
 
-<style scoped>
-    .grid {
-        margin: 24px auto;
-        max-width: 800px;
+<style>
+    .on {
+        background-color: rebeccapurple;
     }
 </style>

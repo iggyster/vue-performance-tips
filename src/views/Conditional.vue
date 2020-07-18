@@ -1,9 +1,7 @@
 <template>
-    <Page>
-        <template #content>
-            <div class="row m-0 justify-content-center">
-                <h1>Show VS If</h1>
-            </div>
+    <Benchmark>
+        <template #title>
+            <h1>Conditional rendering</h1>
         </template>
         <template #switches>
             <div class="custom-control custom-switch">
@@ -13,35 +11,34 @@
         </template>
         <template #off>
             <div class="grid">
-                <ShowOff v-for="(n,index) of list" :key="index" :value="n"/>
+                <ConditionalOff v-for="(n,index) of list" :key="index" :value="n"/>
             </div>
         </template>
         <template #on>
             <div class="grid">
-                <ShowOn v-for="(n,index) of list" :key="index" :value="n"/>
+                <ConditionalOn v-for="(n,index) of list" :key="index" :value="n"/>
             </div>
         </template>
-    </Page>
+    </Benchmark>
 </template>
 
 <script>
-    import ShowOff from "../components/Benchmarks/Show/ShowOff";
-    import ShowOn from "../components/Benchmarks/Show/ShowOn";
+    import ConditionalOff from "../components/Benchmarks/Conditional/ConditionalOff";
+    import ConditionalOn from "../components/Benchmarks/Conditional/ConditionalOn";
     import generate from "../mixins/generate";
 
     export default {
-        name: "Show",
+        name: "Conditional",
         mixins: [generate],
         components: {
-            ShowOff,
-            ShowOn,
+            ConditionalOff,
+            ConditionalOn,
         },
     }
 </script>
 
-<style scoped>
-    .grid {
-        margin: 24px auto;
-        max-width: 800px;
+<style>
+    .on {
+        background-color: dodgerblue;
     }
 </style>

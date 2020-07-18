@@ -34,8 +34,6 @@
 
 <style scoped>
     .heavy {
-        border: black 5px solid;
-        border-radius: 50%;
         opacity: 0;
     }
 

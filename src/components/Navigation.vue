@@ -14,24 +14,24 @@
         </button>
         <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav justify-content-end">
-                <router-link to="/functional" v-slot="{ href, navigate, isActive }">
+                <router-link :to="{name: 'functional-component'}" v-slot="{ href, navigate, isActive }">
                     <li :class="`nav-item${isActive ? ' active' : ''}`">
-                        <a class="nav-link" :href="href" @click="navigate">Functional</a>
+                        <a class="nav-link" :href="href" @click="navigate">Functional component</a>
                     </li>
                 </router-link>
-                <router-link to="/show" v-slot="{ href, navigate, isActive }">
+                <router-link :to="{name: 'conditional-rendering'}" v-slot="{ href, navigate, isActive }">
                     <li :class="`nav-item${isActive ? ' active' : ''}`">
-                        <a class="nav-link" :href="href" @click="navigate">Show/If</a>
+                        <a class="nav-link" :href="href" @click="navigate">Conditional render</a>
                     </li>
                 </router-link>
-                <router-link to="/local-var" v-slot="{ href, navigate, isActive }">
+                <router-link :to="{name: 'local-var'}" v-slot="{ href, navigate, isActive }">
                     <li :class="`nav-item${isActive ? ' active' : ''}`">
                         <a class="nav-link" :href="href" @click="navigate">Local var</a>
                     </li>
                 </router-link>
-                <router-link to="/child" v-slot="{ href, navigate, isActive }">
+                <router-link :to="{name: 'child-component'}" v-slot="{ href, navigate, isActive }">
                     <li :class="`nav-item${isActive ? ' active' : ''}`">
-                        <a class="nav-link" :href="href" @click="navigate">Child</a>
+                        <a class="nav-link" :href="href" @click="navigate">Child component</a>
                     </li>
                 </router-link>
                 <router-link :to="{name: 'keep-alive-prev'}" v-slot="{ href, navigate, isActive }">
@@ -39,9 +39,9 @@
                         <a class="nav-link" :href="href" @click="navigate">Keep-alive</a>
                     </li>
                 </router-link>
-                <router-link :to="{name: 'deferred'}" v-slot="{ href, navigate, isActive }">
+                <router-link :to="{name: 'deferred-components'}" v-slot="{ href, navigate, isActive }">
                     <li :class="`nav-item${isActive ? ' active' : ''}`">
-                        <a class="nav-link" :href="href" @click="navigate">Deferred</a>
+                        <a class="nav-link" :href="href" @click="navigate">Deferred components</a>
                     </li>
                 </router-link>
             </ul>

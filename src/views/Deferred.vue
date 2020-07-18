@@ -1,5 +1,8 @@
 <template>
-    <Page>
+    <Benchmark>
+        <template #title>
+            <h1>Deferred components</h1>
+        </template>
         <template #switches>
             <div class="btn-group" role="group" aria-label="Basic example">
                 <button type="button"
@@ -12,11 +15,6 @@
                         @click="page = true">Next</button>
             </div>
         </template>
-        <template #content>
-            <div class="row m-0 justify-content-md-center align-items-center">
-                <h1>Deferred components</h1>
-            </div>
-        </template>
         <template #off>
             <DeferredOff  v-if="page"/>
             <Light v-else color="yellow"/>
@@ -25,7 +23,7 @@
             <DeferredOn v-if="page"/>
             <Light v-else color="yellow"/>
         </template>
-    </Page>
+    </Benchmark>
 </template>
 
 <script>
@@ -47,3 +45,12 @@
         },
     }
 </script>
+
+<style>
+    .grid {
+        height: 200px;
+    }
+    .on {
+        background-color: tomato;
+    }
+</style>
