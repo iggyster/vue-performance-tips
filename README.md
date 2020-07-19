@@ -1,24 +1,18 @@
-# app
+# Test App
 
 ## Project setup
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+## Deploy
+
 ```
-yarn serve
+docker-compose up -d
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## Run Vue UI
 
-### Lints and fixes files
 ```
-yarn lint
+docker-compose exec node vue ui --headless --port 8000 --host 0.0.0.0
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
